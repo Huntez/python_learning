@@ -1,0 +1,1 @@
+# solo_python_teaching
