@@ -1,4 +1,4 @@
-from functools import wraps
+# from functools import wraps
 
 def header(func):
     def inner(*args):
@@ -8,7 +8,7 @@ def header(func):
     return inner
 
 def table(func):
-    @wraps
+    @my_wraps
     def inner(*args):
         print("<table>")
         func(*args)
@@ -32,6 +32,5 @@ def sqr(x):
 
 
 print(help(sqr))
-sqr.__name__
 
 
