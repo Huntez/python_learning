@@ -87,19 +87,3 @@
 # a = [5,2,1,2,4]
 # a.sort(key=lambda x: x)
 # print(a)
-
-# decorator
-def decator(func):
-    
-    def inner():
-        print('start decorator')
-        func()
-        print('finish decorator')
-    return inner
-
-def say():
-    print("hello world")
-
-say = decator(say)
-
-    
