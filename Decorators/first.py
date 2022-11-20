@@ -1,6 +1,7 @@
-from functools import wraps
+# from functools import wraps
 
 def header(func):
+    # @wraps
     def inner(*args):
         print("<h1>")
         func(*args)
@@ -8,7 +9,7 @@ def header(func):
     return inner
 
 def table(func):
-    @wraps
+    
     def inner(*args):
         print("<table>")
         func(*args)
@@ -21,7 +22,7 @@ def table(func):
 def say(name, surname, age):
     print("hello world", name, surname, age)
 
-@table
+@header
 def sqr(x):
     """
     multiply x to cube
@@ -29,8 +30,7 @@ def sqr(x):
     :return 
     """
     print(x**2)
-
-
-print(help(sqr))
+    
+print(sqr(25))
 
 
