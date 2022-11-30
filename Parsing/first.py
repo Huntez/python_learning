@@ -19,4 +19,4 @@ def download_file(url):
     except Exception as error:
         print(error)
 
-download_file(connections.video_url)
+print(download_file(connections.video_url))
